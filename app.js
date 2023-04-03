@@ -1,9 +1,9 @@
-const fooElement = document.getElementById('foo')
-if (fooElement !== null) {
-    fooElement.textContent = 'new text';
+const boxList = document.getElementsByClassName('box');
+for (let i = 0; i < boxList.length; i++) {
+    boxList[i].textContent = 'index -> ' + i;
 }
 
-const barElement = document.getElementById('bar');
-if (barElement !== null) {
-    barElement.className = 'newClass';
-}
+const arr = Array.from(boxList);
+arr.forEach(function(element) {
+    element.style.border = '1px solid green'
+})
