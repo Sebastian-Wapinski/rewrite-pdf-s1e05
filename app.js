@@ -1,8 +1,9 @@
-const pList = document.querySelectorAll('p');
-const divList = document.querySelectorAll('section > div');
-const commentsContentList = document.querySelectorAll('.comments__content')
-
-for (let i = 0; i < pList.length; i++) {
-    pList[i].textContent = i + '. Kolejny wiersz';
+const fooElement = document.getElementById('foo')
+if (fooElement !== null) {
+    fooElement.textContent = 'new text';
 }
-console.log(pList);
+
+const barElement = document.getElementById('bar');
+if (barElement !== null) {
+    barElement.className = 'newClass';
+}
