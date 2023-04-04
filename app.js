@@ -1,6 +1,4 @@
-const liElement = document.querySelector('li');
-if (liElement) {
-    console.log(
-        liElement.dataset.zipCode,
-    );
+const section = document.querySelector('.comments');
+if (section) {
+    const idValue = section.id;
 }
