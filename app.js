@@ -1,2 +1,7 @@
-const pElement = document.querySelector('p');
-pElement.innerHTML = 'Tekst z <strong>ważną</strong> informacją';
+const divElement = document.querySelector('div');
+
+if (divElement) {
+    divElement.style.backgroundColor = 'blue';
+    divElement.style.border = '3px solid yellow'
+    divElement.style.fontSize = '25px'
+}
